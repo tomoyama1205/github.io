@@ -1,0 +1,527 @@
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ HTML5 display-role reset for older browsers
+ article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+} 
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* resetcss end */
+
+body {
+  background-color: #f0f0f0;
+  font-size: 14px;
+  color: #333;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.wrap {
+	overflow: hidden;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* header start */
+header {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-size: cover;
+  background-image: url("image/18084.jpg");
+}
+
+h1.logo {
+  display: block;
+  font-size: 2.5rem;
+}
+
+span.logo-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 75px;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+span.logo-desc {
+  display: block;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+
+.navber {
+  padding: 50px;
+  font-family: 'Open sans', sans-serif;
+  z-index: 100;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+li {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0 30px 20px 0;
+  list-style: none;
+}
+
+li a {
+  color: #333;
+  letter-spacing: -0.01em;
+  margin-left: 5px;
+}
+/* header end */
+
+/* content start */
+.inner {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-title-block {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+}
+/* content end */
+
+/* profile start */
+.two-column-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.two-column-image {
+  width: 33%;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  border: none;
+  display: block;
+}
+
+.two-column-desc {
+  width: 62%;
+}
+/* profile end */
+
+/* skill start */
+
+.card {
+  margin: 30px;
+}
+
+.skill-desc-title {
+  margin-bottom: 3px;
+  font-size: 26px;
+  padding: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.table {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.table th {
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.star-rating {
+  margin-left: 50px;
+  position: relative;
+  width: 5em;
+  height: 1em;
+  font-size: 25px;
+
+}
+
+/* starrank start */
+.star-rating-front1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.star-rating-front2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.star-rating-front3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.star-rating-front4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.star-rating-front5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.star-rating-front6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.star-rating-front7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.star-rating-front8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.star-rating-front9 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.star-rating-front10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+/* starrank end */
+
+.star-rating-back {
+  color: #ccc;
+}
+/* skill end */
+
+/* work start */
+
+.work-card{
+  background-color: white;
+  padding: 0;
+  margin: 40px;
+}
+
+.card-image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.caption-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.caption-info {
+  margin: 0 15px 1.5rem 15px;
+}
+
+a {
+  color: #333;
+}
+/* work end */
+
+/* contact start */
+.contact-list{
+  width: 5rem;
+  height: 8rem;
+  margin: 50px auto 20px;
+}
+
+.contact-list i{
+  color: black;
+  padding-bottom: 5px;
+}
+
+.contact-list-desc {
+  font-size: 20px;
+  color: black;
+}
+
+/* contact end */
+
+/* footer start */
+#footer {
+  background-color: #333;
+  color: white;
+}
+
+#footer .inner {
+  padding: 40px 0 30px 0;
+  margin: 0 auto;
+}
+
+.footer-link a {
+  color: white;
+  font-size: 15px;
+}
+
+.copyright {
+  font-size: 10px;
+}
+
+/* footer end */
+
+@media screen and (max-width: 1179px) {
+
+/* starrank start */
+.star-rating {
+  position: relative;
+  height: 1em;
+  margin-left: 1px;
+  width: 2em;
+}
+
+/* .star-rating {
+  margin-left: 50px;
+  position: relative;
+  width: 5em;
+  height: 1em;
+  font-size: 25px;
+
+} */
+
+.star-rating-front1 {
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.star-rating-front2 {
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.star-rating-front3 {
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.star-rating-front4 {
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.star-rating-front5 {
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.star-rating-front6 {
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.star-rating-front7 {
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.star-rating-front8 {
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.star-rating-front9 {
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.star-rating-front10 {
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+  white-space: nowrap;
+  width: 60%;
+}
+/* starrank end */
+
+.star-rating-back {
+  font-size: 10px;
+  color: #ccc;
+}
+
+}
