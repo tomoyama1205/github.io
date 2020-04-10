@@ -29,6 +29,18 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 } 
 
+.js-animation {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(40px);
+  transition: all 1s;
+}
+.js-animation.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
 body {
 	line-height: 1;
 }
@@ -70,34 +82,38 @@ body {
 
 /* header start */
 header {
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
-  background-size: cover;
-  background-image: url("image/18084.jpg");
+  height: 70vh;
+}
+
+.top-img {
+  height: 70vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
 }
 
 h1.logo {
-  display: block;
   font-size: 2.5rem;
+  position: relative;
+  top: 30vh;
 }
 
 span.logo-title {
+  display: block;
   font-family: 'Oswald', sans-serif;
-  font-size: 75px;
-  color: #fff;
+  font-size: 120px;
+  color: #333;
   line-height: 1;
   letter-spacing: -2px;
+  text-align: center;
 }
 
 span.logo-desc {
   display: block;
-  font-size: 36px;
+  font-size: 30px;
   text-align: center;
-  margin-top: 30px;
-  color: #fff;
+  margin-top: 10px;
+  color: #333;
 }
 
 .navber {
@@ -391,6 +407,29 @@ a {
 
 @media screen and (max-width: 1179px) {
 
+  .two-column-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: block;
+  }
+  
+  .two-column-image {
+    width: 100%;
+  }
+  
+  img{
+    max-width: 100%;
+    height: auto;
+    border: none;
+    display: block;
+  }
+  
+  .two-column-desc {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
 /* starrank start */
 .star-rating {
   position: relative;
