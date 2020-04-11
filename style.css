@@ -82,34 +82,37 @@ body {
 
 /* header start */
 header {
-  height: 70vh;
+  height: 75vh;
 }
 
 .top-img {
-  height: 70vh;
+  height: 75vh;
   width: 100%;
   object-fit: cover;
   position: absolute;
 }
 
-h1.logo {
-  font-size: 2.5rem;
+.logo {
   position: relative;
   top: 30vh;
+  opacity: 0.95;
+  background-color: white;
+  padding-bottom: 20px;
 }
 
 span.logo-title {
   display: block;
-  font-family: 'Oswald', sans-serif;
-  font-size: 120px;
+  font-family: 'Playfair Display', serif;
+  font-size: 150px;
   color: #333;
   line-height: 1;
-  letter-spacing: -2px;
+  letter-spacing: -5px;
   text-align: center;
 }
 
 span.logo-desc {
   display: block;
+  font-family: 'Playfair Display', serif;
   font-size: 30px;
   text-align: center;
   margin-top: 10px;
@@ -118,12 +121,13 @@ span.logo-desc {
 
 .navber {
   padding: 50px;
-  font-family: 'Open sans', sans-serif;
   z-index: 100;
   text-align: center;
 }
 
 ul {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
   display: flex;
   flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -132,12 +136,14 @@ ul {
 
 li {
   font-weight: bold;
-  font-size: 20px;
+  display: flex;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
   padding: 0 30px 20px 0;
   list-style: none;
 }
 
-li a {
+li h2 {
   color: #333;
   letter-spacing: -0.01em;
   margin-left: 5px;
@@ -158,12 +164,25 @@ li a {
 
 .section-title {
   font-size: 36px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
 }
 /* content end */
 
 /* profile start */
+h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  line-height: 1.2em
+}
 .two-column-wrapper {
-  width: 80%;
   margin: 0 auto;
   padding: 20px 0;
   display: flex;
@@ -173,18 +192,21 @@ li a {
 }
 
 .two-column-image {
-  width: 33%;
+  width: 50%;
+  margin: 100px 100px 0;
 }
 
 img{
   max-width: 100%;
-  height: auto;
+  height: 60vh;
   border: none;
   display: block;
+  margin: 0 auto;
 }
 
 .two-column-desc {
-  width: 62%;
+  width: 50%;
+  margin: 50px 0;
 }
 /* profile end */
 
@@ -346,17 +368,31 @@ p {
   margin-bottom: 20px;
 }
 
-p {
-  margin-bottom: 1rem;
+.image {
+  height: 35vh;
+  object-fit: cover;
+}
+
+.card-caption {
+  margin:15px;
 }
 
 .caption-title {
-  font-size: 20px;
+  font-size: 23px;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.caption-subtitle {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .caption-info {
-  margin: 0 20px 1rem 20px;
+  font-size: 13px;
+  margin-bottom: 15px;
+  line-height: 1.3em;
 }
 
 a {
