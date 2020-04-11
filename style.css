@@ -193,9 +193,8 @@ h4 {
 
 .two-column-image {
   width: 50%;
-  margin: 100px 100px 0;
+  margin-top: 100px;
 }
-
 img{
   max-width: 100%;
   height: 60vh;
@@ -369,6 +368,7 @@ p {
 }
 
 .image {
+  width: 100%;
   height: 35vh;
   object-fit: cover;
 }
@@ -441,7 +441,35 @@ a {
 
 /* footer end */
 
+#page_top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+#page_top a {
+  background-color: #999;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 20px;
+}
+#page_top a:hover {
+  background-color: #666;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1179px) {
+
+  span.logo-title {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    color: #333;
+    line-height: 1;
+    letter-spacing: -5px;
+    text-align: center;
+  }
+  
 
   .two-column-wrapper {
     width: 100%;
