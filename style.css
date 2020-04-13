@@ -454,7 +454,11 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 1000px) {
+
+  span.logo-desc {
+    font-size: 20px;
+}
 
   .container {
     width: 100%;
