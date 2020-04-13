@@ -456,6 +456,14 @@ a {
 
 @media screen and (max-width: 1179px) {
 
+  .container {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
   .navber {
     padding: 50px 0 30px;
     z-index: 100;
@@ -466,8 +474,8 @@ a {
     font-weight: bold;
     display: flex;
     font-family: 'Playfair Display', serif;
-    font-size: 18px;
-    padding: 0 10px 10px 0;
+    font-size: 16px;
+    padding: 0 5px 10px 0;
     list-style: none;
   }
 
@@ -507,7 +515,7 @@ a {
     width: 100%;
     height: 50vh;
     object-fit: cover;
-    padding: 0 30px 20px;
+    padding: 0 15px 20px;
   }
   
   img{
@@ -520,7 +528,7 @@ a {
   .two-column-desc {
     width: 100%;
     margin: 20px 0 0 0;
-    padding: 0 30px;
+    padding: 0 20px;
   }
 
   h3 {
