@@ -467,7 +467,7 @@ a {
     display: flex;
     font-family: 'Playfair Display', serif;
     font-size: 18px;
-    padding: 0 30px 20px 0;
+    padding: 0 10px 10px 0;
     list-style: none;
   }
 
@@ -535,15 +535,6 @@ a {
     line-height: 1.2em
   }
 
-  .work-card {
-    background-color: white;
-    padding: 0;
-    margin: 30px 60px;
-  }
-
-  .card {
-    margin: 30px 60px;
-  }
 
 /* starrank start */
 .star-rating {
